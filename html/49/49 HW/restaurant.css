@@ -8,3 +8,11 @@ p{text-align: center;
 a{
     font-size: 1.5em;
 }
+img{
+    border: 20px solid blue;
+    border-radius: 50px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
