@@ -1,4 +1,4 @@
-//import pcsTools from './pcsTools.js';
+import pcsTools from './pcsTools.js';
 
 // const potus = pcsTools.getElement('#potus');
 
@@ -19,8 +19,8 @@
 // console.log(pcsTools.css(potus, "font-family"));
 
 
-// const potus = pcsTools('#potus');
-const potus = $('#potus');
+const potus = pcsTools('#potus');
+// const potus = $('#potus');
 
 potus.css('color', 'red');
 potus.click(() => {
@@ -28,13 +28,13 @@ potus.click(() => {
 });
 
 potus.on('mouseenter', () => {
-    potus.css('backgroundColor', 'blue')
+    potus.css('backgroundColor', 'blue');
 });
 
 potus.on('mouseleave', () => {
-    potus.css('backgroundColor', 'white')
+    potus.css('backgroundColor', 'white');
 });
-
+// potus.hide();
 //pcsTools.setCss(potus, 'font-family', 'cursive');
 //console.log(pcsTools.css(potus, "font-family"));
 console.log(potus.css("font-family"));

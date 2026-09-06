@@ -18,10 +18,14 @@ function getCss(element, property) {
     //return element.style[property];
     return getComputedStyle(element)[property];
 }
+function hide(element) {
+    setCss(element,"display","none")
+}
 
 export default function (selector) {
     const element = getElement(selector);
     return {
+
         css: (property, value) => {
             if (value === undefined) {
                 return getCss(element, property);
@@ -29,6 +33,7 @@ export default function (selector) {
                 setCss(element, property, value);
             }
         },
+        hide: () => hide(element),
         on: (eventType, callback) => {
             on(element, eventType, callback);
         },
