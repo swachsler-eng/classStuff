@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Vibe Weather</h1>
+
+        <form id="searchForm">
+            <input id="cityInput" type="text" placeholder="Enter a city (e.g. Chicago)" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message"></p>
+
+        <section id="weather" class="hidden">
+            <h2 id="city"></h2>
+            <div class="current">
+                <img id="icon" src="" alt="">
+                <span id="temp"></span>
+            </div>
+            <p id="description"></p>
+            <p id="vibe"></p>
+
+            <ul class="details">
+                <li>Feels like <span id="feelsLike"></span></li>
+                <li>Humidity <span id="humidity"></span></li>
+                <li>Wind <span id="wind"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
